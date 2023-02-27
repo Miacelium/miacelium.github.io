@@ -1,0 +1,77 @@
+@font-face {
+    font-family: OpenDyslexic;
+    src:    url('OpenDyslexic/OpenDyslexic-Regular.otf') format("truetype");
+            url("OpenDyslexic/OpenDyslexic-Bold.otf") format("truetype") font-weight-bold;
+            url("OpenDyslexic/OpenDyslexic-BoldItalic.otf") format("truetype") font-italic font-weight-bold;
+            url("OpenDyslexic/OpenDyslexic-Italic.otf") format("truetype") font-italic;
+}
+
+body {
+    background: #000000;
+    color: #B2A4D4;
+    font-family: OpenDyslexic, sans-serif;
+}
+
+.category, :target ~ .default {
+    display: none;
+}
+
+.default, :target {
+    display: block;
+} /* https://dev.to/hakash/100-pure-htmlcss-page-navigation---no-javascript-required-2em5 */
+
+
+.navigation-bar {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+}
+
+.navigation-bar li {
+    float: left;
+}
+
+.navigation-bar a {
+    display: block;
+    color: #B2A4D4;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+    font-size: 14px;
+}
+
+.title > .main-title {
+    text-align: center;
+    font-size: 20px;
+    margin: auto;
+}
+
+.title > .sub-title {
+    text-align: center;
+    font-size: 16px;
+    margin: auto;
+}
+
+.post {
+    margin-bottom: 2px;
+    margin-left: 10%;
+    margin-right: 10%;
+    text-align: justify;
+    border: 1px solid;
+}
+
+.post > br {
+    display: block;
+    margin-bottom: 2px;
+}
+
+.post > .headline {
+    font-size: 16px;
+    margin: 5px 10px 0px 10px;
+}
+
+.post > .content {
+    font-size: 14px;
+    margin: 0px 10px 5px 10px;
+}
