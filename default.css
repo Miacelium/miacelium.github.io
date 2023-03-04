@@ -1,10 +1,11 @@
 @font-face {
     font-family: OpenDyslexic;
-    src:    url('OpenDyslexic/OpenDyslexic-Regular.otf') format("truetype");
-            url("OpenDyslexic/OpenDyslexic-Bold.otf") format("truetype") font-weight-bold;
-            url("OpenDyslexic/OpenDyslexic-BoldItalic.otf") format("truetype") font-italic font-weight-bold;
-            url("OpenDyslexic/OpenDyslexic-Italic.otf") format("truetype") font-italic;
+    src:    url('fonts/OpenDyslexic/OpenDyslexic-Regular.otf') format("truetype");
+    src:    url("fonts/OpenDyslexic/OpenDyslexic-Bold.otf") format("truetype") font-weight-bold;
+    src:    url("fonts/OpenDyslexic/OpenDyslexic-BoldItalic.otf") format("truetype") font-italic font-weight-bold;
+    src:    url("fonts/OpenDyslexic/OpenDyslexic-Italic.otf") format("truetype") font-italic;
 }
+
 
 body {
     background: #000000;
@@ -41,7 +42,8 @@ body {
     font-size: 14px;
 }
 
-.title > .main-title {
+
+.title > h1 {
     text-align: center;
     font-size: 20px;
     margin: auto;
@@ -61,7 +63,7 @@ body {
     border: 1px solid;
 }
 
-.post > .headline {
+.post > h2 {
     font-size: 16px;
     margin: 5px 10px 0px 10px;
 }
